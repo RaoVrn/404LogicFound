@@ -9,17 +9,11 @@ Method 1:
 Method 2:
 - Create a function `findLargest(int a, int b, int c)` that returns the largest of the three numbers.
 
-Input:
-10 20 15
+Input: 10 20 15
+Output: Largest number is 20
 
-Output:
-Largest number is 20
-
-Input:
-5 3 2
-
-Output:
-Largest number is 5
+Input: 5 3 2
+Output: Largest number is 5
 */
 
 
