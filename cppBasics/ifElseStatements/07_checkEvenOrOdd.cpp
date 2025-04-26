@@ -4,21 +4,16 @@ Write a C++ program to check whether a given number is even or odd.
 
 Method 1: 
 - Check directly in the main function using the modulus operator.
+- Hint: A number is even if it gives a remainder of 0 when divided by 2. Use the modulus operator (`%`).
 
 Method 2:
 - Create a function `isEven(int num)` that returns whether the number is even or odd.
 
-Input:
-4
+Input: 4
+Output: Even
 
-Output:
-Even
-
-Input:
-7
-
-Output:
-Odd
+Input: 7
+Output: Odd
 */
 
 
