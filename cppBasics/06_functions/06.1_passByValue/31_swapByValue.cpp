@@ -2,16 +2,29 @@
 Problem:
 Write a C++ program to swap two integers using a function that uses pass by value.
 
-Requirements:
-- Create a function `void swap(int a, int b)` that attempts to swap the two numbers.
-- In the main function, take input for `a` and `b`, call the `swap` function, and print the values of `a` and `b` again to observe the result.
+➤ Create a function:
+    void swap(int a, int b)
+    - This function should attempt to swap the values.
+    - Print the swapped values inside the function.
 
-Expected Output:
-The original values should remain unchanged after the function call.
+➤ In the main function:
+    - Take input from user for a and b.
+    - Call the function.
+    - Print the values of a and b again.
+
+Input:
+Enter two numbers: 10 20
+
+Output:
+Inside swap function:
+a = 20, b = 10
+Outside after function call:
+a = 10, b = 20
 
 Note:
-This demonstrates that pass-by-value does not affect the original variables.
+The original values remain unchanged outside the function.
 */
+
 
 
 #include<iostream>
