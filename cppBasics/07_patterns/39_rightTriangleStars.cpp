@@ -1,26 +1,24 @@
 /*
-Write a C++ program to print a square star pattern using nested for loops.
+Write a C++ program to print a right-angled triangle pattern using stars `*`.
 
 ➤ Input:
-An integer `n` representing the number of rows and columns.
+An integer `n` representing the number of rows.
 
 ➤ Output Pattern (for n = 5):
 
-*****
-*****
-*****
-*****
+*
+**
+***
+****
 *****
 
-Implement the program in two ways:
-
-➤ Method 1: Write the entire logic directly in the `main()` function.
-➤ Method 2: Create a function `printSquare(int n)` that takes `n` as input and prints the pattern.
+➤ Method 1: Logic inside `main()`.
+➤ Method 2: Use a function `printRightTriangle(int n)`.
 */
 
 
 // -------------------------
-// Method 1: Directly in main function
+// Method 1: Logic inside main function
 // -------------------------
 
 #include<iostream>
@@ -31,13 +29,13 @@ int main() {
 	cout << "Enter the value of n: ";
 	cin >> n;
 
-	for(int i=1; i<=n; i++) {
-		for(int j=1; j<=n; j++) {
+	for(int i=0; i<n; i++) {
+		for(int j=0; j<=i; j++) {
 			cout << "*";
 		}
 		cout << endl;
 	}
-	
+
 	return 0;
 }
 
@@ -50,9 +48,9 @@ int main() {
 #include<iostream>
 using namespace std;
 
-void printSquare(int n) {
+void printRightTriangle(int n) {
 	for(int i=0; i<n; i++) {
-		for(int j=0; j<n; j++) {
+		for(int j=0; j<=i; j++) {
 			cout << "*";
 		}
 		cout << endl;
@@ -61,11 +59,10 @@ void printSquare(int n) {
 
 int main() {
 	int n;
-
 	cout << "Enter the value of n: ";
 	cin >> n;
 
-    printSquare(n);
-    
+	printRightTriangle(n);
+
 	return 0;
 }
