@@ -43,7 +43,7 @@ int main() {
 
 // -------------------------
 // Method 2: Using a function
-// -------------------------
+// --------------------------
 
 #include<iostream>
 using namespace std;
