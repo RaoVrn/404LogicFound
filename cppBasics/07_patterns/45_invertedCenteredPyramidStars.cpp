@@ -87,6 +87,7 @@ int main() {
 // Method 2: Using a function
 // -------------------------
 // [Incrementing the indentation]
+// -------------------------
 
 #include<iostream>
 using namespace std;
