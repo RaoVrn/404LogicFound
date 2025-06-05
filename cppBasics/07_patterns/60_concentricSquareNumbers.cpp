@@ -47,7 +47,7 @@ int main() {
 
 // -------------------------
 // Method 2: Use printConcentricSquareNumbers(int n) function
-// -------------------------
+// --------------------------
 
 #include<iostream>
 using namespace std;
