@@ -18,16 +18,16 @@ Shifts: [2, 2, 3, 1, 2] → [1, 2, 3, 1, 2] → [1, 2, 3, 3, 2] → [1, 2, 2, 3,
 using namespace std;
 
 void insertionSort(int arr[], int n) {
-    int count=0;
+    int shift=0;
 	for(int i=0; i<n; i++) {
 		int j=i;
 		while(j>0 && arr[j-1] > arr[j]) {
 			swap(arr[j-1], arr[j]);
-			count++;
+			shift++;
 			j--;
 		}
 	}
-	cout << count;
+	cout << shift;
 }
 
 int main() {
